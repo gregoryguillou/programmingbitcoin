@@ -413,8 +413,7 @@ class S256Point(Point):
             else:
                 return b'\x03' + self.x.num.to_bytes(32, 'big')
         else:
-            return b'\x04' + self.x.num.to_bytes(32, 'big') + \
-                self.y.num.to_bytes(32, 'big')
+            return b'\x04' + self.x.num.to_bytes(32, 'big') + self.y.num.to_bytes(32, 'big')
     # end::source1[]
 
     # tag::source5[]
